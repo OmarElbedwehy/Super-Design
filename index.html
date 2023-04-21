@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&amp;display=swap">
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Super Design</title>
+</head>
+<body >
+    <div class="landing">
+        <header>
+            <div class="container">
+                <h3>Super Design</h3>
+                <div class="nav">
+                    <div class="burger_ico">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#" data-section=".about">About</a></li>
+                        <li><a href="#" data-section=".skills">Skills</a></li>
+                        <li><a href="#" data-section=".gallery">Gallery</a></li>
+                        <li><a href="#" data-section=".timeline">Timeline</a></li>
+                        <li><a href="#" data-section=".features">Features</a></li>
+                        <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="introduction-txt">
+            <h1>We Are <span>Creative</span> Agency</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+        </div>
+        <ul class="bullets">
+            <li data-section=".about"></li>
+            <li data-section=".skills"></li>
+            <li data-section=".gallery"></li>
+            <li data-section=".timeline"></li>
+            <li data-section=".features"></li>
+            <li data-section=".testimonials"></li>
+        </ul>
+        <span class="close_setting_box"><i class="fa fa-gear"></i></span>
+        <div class="settings-box">
+            <div class="settings-toggle">
+                <i class="fa fa-gear"></i>
+            </div>
+            <div class="settings-container">
+                <div class="option-box">
+                    <h4>Colors</h4>
+                    <ul class="colors-list">
+                        <li data-color="#FF9800" class="active"></li>
+                        <li data-color="#E91E63"></li>
+                        <li data-color="#009688"></li>
+                        <li data-color="#03A9F4"></li>
+                        <li data-color="#4CAF50"></li>
+                    </ul>
+                    <p class="or">Or</p>
+                    <form action="">
+                        <h4>Choose Your Color</h4>
+                        <input id="color" type="color">
+                    </form>
+                </div>
+                <div class="option-box">
+                    <h4>Random Backgrounds</h4>
+                    <div class="btns btns_bg">
+                        <a data-choose="yes" class="active_btn">Yes</a>
+                        <a data-choose="no">No</a>
+                    </div>
+                </div>
+                <div class="option-box">
+                    <h4>Show Bullets</h4>
+                    <div class="btns btns_bullets">
+                        <a data-choose="yes" class="active_btn">Yes</a>
+                        <a data-choose="no">No</a>
+                    </div>
+                </div>
+                <div class="edit option-box">
+                    <h4>Edit Page Text</h4>
+                    <div class="edit_home">
+                        <div class="accord">
+                            <p>Home</p>
+                            <i class="fa-solid fa-caret-down cart-active"></i>
+                            <span class="over"></span>
+                        </div>
+                        <div class="option">
+                            <form action="">
+                                <div class="input"><label for="">Logo name:</label> <input id="logo_input" type="text"></div>
+                                <div class="input"><label for="">Intro heading:</label> <input id="intro_heading_input" type="text"></div>
+                                <div class="input"><label for="">Intro text:</label> <input id="intro_text_input" type="text"></div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="edit_about">
+                        <div class="accord">
+                            <p>About</p>
+                            <i class="fa-solid fa-caret-down cart-active"></i>
+                            <span class="over"></span>
+                        </div>
+                        <div class="option">
+                            <form action="">
+                                <div class="input"><label for="">About text:</label> <input id="about_text_input" type="text"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="edit_timeline">
+                        <div class="accord">
+                            <p>TimeLine</p>
+                            <i class="fa-solid fa-caret-down cart-active"></i>
+                            <span class="over"></span>
+                        </div>
+                        <div class="option">
+                            <form id="timeline_inputs" action="">
+                                <div class="input"><label for="">Timeline-1 H:</label> <input id="heading" data-contentid="1" type="text"></div>
+                                <div class="input"><label for="">Timeline-1:</label> <input data-contentid="1" type="text"></div>
+                                
+                                <div class="input"><label for="">Timeline-2 H:</label> <input id="heading" data-contentid="2" type="text"></div>
+                                <div class="input"><label for="">Timeline-2:</label> <input data-contentid="2" type="text"></div>
+                                
+                                <div class="input"><label for="">Timeline-3 H:</label> <input id="heading" data-contentid="3" type="text"></div>
+                                <div class="input"><label for="">Timeline-3:</label> <input data-contentid="3" type="text"></div>
+                                
+                                <div class="input"><label for="">Timeline-4 H:</label> <input id="heading" data-contentid="4" type="text"></div>
+                                <div class="input"><label for="">Timeline-4:</label> <input data-contentid="4" type="text"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <a class="reset_options">Reset Options</a>
+            </div>
+        </div>
+    </div>
+    <div class="section about">
+        <div class="container">
+            <div class="text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis non voluptate id?</p>
+            </div>
+            <div class="img">
+                <img src="./imgs/about-us.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section skills">
+        <h2 class="head_txt">Our Skills</h2>
+        <div class="container">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="precent">
+                    <span data-width="80%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="precent">
+                    <span data-width="70%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="precent">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="precent">
+                    <span data-width="80%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>PHP</p>
+                <div class="precent">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>MySQL</p>
+                <div class="precent">
+                    <span data-width="70%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section gallery">
+        <h2 class="head_txt">Our Gallery</h2>
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/01.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/02.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/03.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/04.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Four</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/05.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Five</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/06.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Six</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/07.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Seven</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./imgs/08.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Image Eight</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore quos illum provident ipsam aliquid!</p>
+                </div>
+                <div class="over"></div>
+            </div>
+        </div>
+        <div class="img_pop_up">
+            <div class="content">
+                <h2>Image One</h2>
+                <img src="imgs/01.jpg" alt="">
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="section timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <span class="year">2018</span>
+                <div class="left">
+                    <div class="content" id="content-1">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content" id="content-2">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
+                    </div>
+                </div>
+                <span class="year">2016</span>
+                <div class="left">
+                    <div class="content" id="content-3">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
+                    </div>
+                    <div class="content" id="content-4">
+                        <h3>Testing Heading</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section features">
+        <h2 class="head_txt">Our Features</h2>
+        <div class="container">
+            <div class="feats">
+                <div class="feat">
+                    <img src="./imgs/programming.svg" alt="">
+                    <h3>Development</h3>
+                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                </div>
+                <div class="feat">
+                    <img src="./imgs/advertising.svg" alt="">
+                    <h3>Marketing</h3>
+                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                </div>
+                <div class="feat">
+                    <img src="./imgs/hosting-icon.svg" alt="">
+                    <h3>Hosting</h3>
+                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                </div>
+                <div class="feat">
+                    <img src="./imgs/mobile-app.svg" alt="">
+                    <h3>Mobile Develope</h3>
+                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                </div>
+                <div class="feat">
+                    <img src="./imgs/graphic-design.svg" alt="">
+                    <h3>Cloud and Servers</h3>
+                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                </div>
+                <div class="feat">
+                    <img src="./imgs/web-design.svg" alt="">
+                    <h3>Seo</h3>
+                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section testimonials">
+        <div class="container">
+            <h1>Testimonials</h1>
+            <div class="tests">
+                <div class="test">
+                    <p class="com">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                    <div class="user">
+                        <div class="img"><img src="./imgs/DDD.png" alt=""></div>
+                        <div class="text">
+                            <h3>Ahmed Mosaad</h3>
+                            <p class="subtitle">CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test">
+                    <p class="com">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                    <div class="user">
+                        <div class="img"><img src="./imgs/EEE.png" alt=""></div>
+                        <div class="text">
+                            <h3>Ahmed Mosaad</h3>
+                            <p class="subtitle">CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="test">
+                    <p class="com">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                    <div class="user">
+                        <div class="img"><img src="./imgs/AAA.png" alt=""></div>
+                        <div class="text">
+                            <h3>Ahmed Mosaad</h3>
+                            <p class="subtitle">CEO At Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section contact">
+        <div class="container">
+            <h2 class="head_txt">Contact Us</h2>
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Phone">
+                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a class="scroll_to_top"><i class="fa-solid fa-arrow-up"></i></a>
+    <footer>
+        <p>Developed By <a href="https://github.com/OmarElbedwehy">{Omar Elbedwehy}</a></p>
+    </footer>
+    <div class="msg"><p class="msg_text"></p><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" style="width: 1.0009765625em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1025 1024" version="1.1"><path d="M994.305 166.16c-39.945-40.917-104.706-40.917-144.652 0L391.586 635.504 174.61 413.192c-39.946-40.936-104.706-40.936-144.643 0-39.956 40.918-39.956 107.283 0 148.214l289.296 296.42c39.946 40.936 104.7 40.936 144.647 0l530.395-543.451c39.947-40.927 39.947-107.283 0-148.215z"></path></svg></span></div>
+    <script src="./main.js"></script>
+</body>
+</html>
